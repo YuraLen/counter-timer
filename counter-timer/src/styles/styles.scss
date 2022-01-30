@@ -1,0 +1,150 @@
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.time-count{
+  background-image: url("../../public/img/photo_2022-01-30_14-44-231.jpg");
+  background-position: top;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+  border-radius: 30px;
+  width: 556px;
+  height: 300px;
+  padding: 73px 86px;
+}
+
+.time-count_title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.time-count_content{
+  display: flex;
+  justify-content: center;
+}
+
+.time-count_item{
+  text-align: center;
+}
+
+.time-count_value{
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  color: #5d71dd;
+  text-align: center;
+}
+
+.time-count_separator{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #5d71dd;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.time-count_text{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.video{
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video_media{
+  filter: contrast(50%);
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position:fixed;
+}
+
+@media only screen and (max-width: 1250px) {
+  .video_media{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .time-count{
+    width: 456px;
+    height: 200px;
+    padding: 73px 86px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .time-count{
+    width: 256px;
+    height: 100px;
+    padding: 23px 26px;
+  }
+
+  .time-count_value{
+    font-size: 30px;
+    line-height: 32px;
+    color: #5d71dd;
+    text-align: center;
+  }
+  
+  .time-count_separator{
+    font-size: 22px;
+    line-height: 27px;
+    color: #5d71dd;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .time-count_text{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .time-count_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 47px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
