@@ -1,6 +1,6 @@
 body{
   font-family: "Roboto", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -19,9 +19,7 @@ body{
 }
 
 .time-count{
-  background-image: url("../../public/img/photo_2022-01-30_14-44-231.jpg");
-  background-position: top;
-
+  background: linear-gradient(85deg, #fb63f9, #c2e534)
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
